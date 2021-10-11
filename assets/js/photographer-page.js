@@ -171,7 +171,7 @@ form.addEventListener("submit", (e) => {
 	// Regex for form validation
 	const nameRegex = /^([A-Za-zÀ-ÖØ-öø-ÿ][A-Za-zÀ-ÖØ-öø-ÿ ,.'-]*){2}$/g;
 	const emailRegex = /(?=^.{5,255}$)^([A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,})$/g;
-	const messageRegex = /^([A-Za-zÀ-ÖØ-öø-ÿ0-9][A-Za-zÀ-ÖØ-öø-ÿ0-9 ,.'-]*){20}$/g;
+	const messageRegex = /^([A-Za-zÀ-ÖØ-öø-ÿ0-9][A-Za-zÀ-ÖØ-öø-ÿ0-9 ,.'-]*)$/g;
 	let formValidated = true; // Need to be true to submit form
 
 	// Function to check form inputs with regex and add errors messages if inputs are not validated
