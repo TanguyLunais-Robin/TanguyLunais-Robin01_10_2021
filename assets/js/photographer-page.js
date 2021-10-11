@@ -198,6 +198,7 @@ form.addEventListener("submit", (e) => {
 	if (formValidated) {
 		confirmation.style.display = "block";
 		form.style.display = "none";
+		console.log ( "Ba");
 	}
 });
 
