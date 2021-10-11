@@ -134,4 +134,4 @@ const checkTag = (btn) => {
 		$(".btn-" + btn).addClass("is-checked");
 	}
 };
-/* ↑ INDEX ↑ */
+
