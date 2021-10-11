@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8" />
+		<title id="title"></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+		<link rel="apple-touch-icon" sizes="180x180" href="./assets/img/favicon/apple-touch-icon.png" />
+		<link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon/favicon-32x32.png" />
+		<link rel="icon" type="image/png" sizes="16x16" href="./assets/img/favicon/favicon-16x16.png" />
+		<link rel="manifest" href="./assets/img/favicon/site.webmanifest" />
+		<link rel="stylesheet" href="./assets/css/style.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+	</head>
+
+	<body>
+		<header class="header-photographer-page">
+			<a href="./"><img alt="Fisheye Home page" src="./assets/img/logo.svg" class="logo logo-photographer-page" /></a>
+		</header>
+		<main id="main" class="photographer-main-container">
+			<div id="about-photographer">
+				<div id="about-photographer-img-container">
+					<img id="about-photographer-img" />
+					<button id="call-to-action-button">Contactez-moi</button>
+				</div>
+				<div>
+					<h1 id="about-photographer-name"></h1>
+					<div>
+						<p id="about-photographer-city"></p>
+						<p id="about-photographer-tagline"></p>
+					</div>
+					<div id="about-photographer-tags-container" class="filters"></div>
+				</div>
+				<div id="about-photographer-likes-price-container">
+					<div id="about-photographer-likes-container">
+						<div id="about-photographer-likes-count"></div>
+						<img src="./assets/img/likes.svg" alt="photographer likes" id="about-photographer-likes-logo" />
+					</div>
+					<p id="about-photographer-price"></p>
+				</div>
+			</div>
+
+			<div id="call-to-action-modal" class="call-to-action-modal">
+				<!-- Modal content -->
+				<div class="call-to-action-modal-content">
+					<div class="modal-body">
+						<div class="call-to-action-modal-title">
+							Contactez-moi <br />
+							<span id="call-to-action-modal-photographer-name"></span>
+						</div>
+						<span class="close1">&times;</span>
+						<form id="form" name="form" action="" method="get">
+							<div class="formData">
+								<label for="first">Prénom</label><br />
+								<input class="text-control" type="text" id="first" name="first" /><br />
+							</div>
+							<div id="error-first" class="error-form">Veuillez entrer 2 caractères ou plus pour le champ du Prénom.</div>
+							<div class="formData">
+								<label for="last">Nom</label><br />
+								<input class="text-control" type="text" id="last" name="last" /><br />
+							</div>
+							<div id="error-last" class="error-form">Veuillez entrer 2 caractères ou plus pour le champ du Nom.</div>
+							<div class="formData">
+								<label for="email">Email</label><br />
+								<input class="text-control" type="email" id="email" name="email" /><br />
+							</div>
+							<div id="error-email" class="error-form">Vous devez entrer votre adresse email.</div>
+							<div class="formData">
+								<label for="message">Votre message</label><br />
+								<textarea class="text-control text-control-message" type="text" id="message" name="message" rows="5"></textarea>
+							</div>
+							<div id="error-message" class="error-form">Veuillez entrer votre message (minimum 20 caractères, pas de caractères spéciaux)</div>
+							<input class="btn-submit button" type="submit" value="Envoyer" />
+						</form>
+
+						<div id="confirmation">
+							<h1>Merci ! Votre message a été envoyé.</h1>
+							<button id="confirmation-btn-close" class="btn-close">Fermer</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="sort">
+				<span class="sort-title">Trier par</span>
+				<div class="dropdown">
+					<div id="dropdown-title" class="dropbtn"></div>
+					<div class="dropdown-content button-group sort-by-button-group">
+						<a id="sort-by-popularity" class="sort-button button is-checked" data-sort-value="popularity" onclick="sort('Popularité')">Popularité</a>
+						<a id="sort-by-date" class="sort-button button" data-sort-value="date" onclick="sort('Date')">Date</a>
+						<a id="sort-by-name" class="sort-button button" data-sort-value="title" onclick="sort('Titre')">Titre</a>
+					</div>
+				</div>
+			</div>
+
+			<div id="photographer-all-medias-container" class="grid"></div>
+
+			<div id="myModal" class="modal">
+				<div id="modal-content" class="modal-content">
+					<span class="close cursor" onclick="closeModal()">&times;</span>
+				</div>
+			</div>
+		</main>
+		<script src="./assets/js/main.js"></script>
+		<script src="./assets/js/photographer-page.js"></script>
+	</body>
+</html>
