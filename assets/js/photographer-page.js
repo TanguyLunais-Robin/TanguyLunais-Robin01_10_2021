@@ -147,7 +147,7 @@ function launchModal() {
 // Close modal on click on X
 modalCloseBtn.forEach((btn) => btn.addEventListener("click", closeModal1));
 // Close modal on click on confirmation button
-//confirmationCloseBtn.forEach((btn) => btn.addEventListener("click", closeModal));
+
 
 // Close modal with a display="none"
 function closeModal1() {
@@ -250,7 +250,7 @@ const filter = async () => {
 			removeFilter(filter);
 		}
 		// filter isotope
-		// group filters together, inclusive
+		
 		$grid.isotope({ filter: filters.join(",") });
 		renderLightbox();
 	});
@@ -404,7 +404,7 @@ function plusSlides(n) {
 	showSlides((slideIndex += n));
 }
 
-// Thumbnail image controls
+// vignette image controls
 function currentSlide(n) {
 	showSlides((slideIndex = n));
 }
