@@ -1,0 +1,73 @@
+// Header index
+.header-index{
+    height: 90px;
+    width: 70%;
+    position: absolute;
+    @include small{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.header-elements{
+    display: flex;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10px;
+    @include medium{
+        margin-top: 3px;
+    }
+    @include small{
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+        margin-top: 10px;
+    }
+}
+
+.logo{
+    width: 30%;
+    display: flex;
+    img{
+        width: 150px;
+        @include medium{
+            width: 128px;
+        }
+        @include small{
+            margin: 25PX 0 30PX 10PX;
+        }
+        @include xsmall{
+            width: 100%;
+        }
+    }
+}
+
+nav{
+    width: 65%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    & a{
+        color: $colour-primary-red;
+    }
+    @include medium{
+        margin-right: 5%;
+    }
+    @include small{
+        width: 100%;
+    }
+}
+
+// Header photographer-page
+
+.header-photographer-page{
+    width:100%;
+    margin: 20px 0;
+    & img{
+        width: 150px;
+    }
+}

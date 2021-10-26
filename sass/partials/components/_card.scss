@@ -1,0 +1,48 @@
+.card{
+    text-align: center;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    & img{
+        overflow: hidden;
+        width: 170px;
+        height: 170px;
+        border-radius: 50%;
+        object-fit: cover;
+        position: relative;
+        z-index: 2;
+    }
+}
+
+.card .name{
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 47px;
+    text-align: center;
+    color: $colour-primary-darkcoral;
+    margin: 0;
+}
+
+.info{
+    & > .location{
+        color: $colour-primary-red;
+        font-size: 13px;
+    }
+    & > .tagline{
+        font-size: 10px;
+        margin-top: $margin-top-hero;
+    }
+    & > .price{
+        font-size: 9px;
+        color: #757575;
+        margin-top: $margin-top-hero;
+    }
+    & > .tagbox{
+        font-size: 12px;
+        margin-top: $margin-top-hero-tagbox;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}

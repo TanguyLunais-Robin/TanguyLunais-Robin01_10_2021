@@ -1,0 +1,26 @@
+.bottom-box {
+    width: 200px;
+    height: 40px;
+    background-color: #DB8876;
+    font-size: 14px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    position: fixed;
+    bottom: 0;
+    right: 60px;
+    @include small{
+        display: none;
+    }
+    & .rating-section{
+        display: flex;
+        & .heart{
+            display: flex;
+            align-items: center;
+            margin-left: 3px;
+        }
+    }
+}

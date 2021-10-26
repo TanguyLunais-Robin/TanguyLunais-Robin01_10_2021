@@ -1,0 +1,44 @@
+#index_main{
+    margin-top: 25px;
+}
+
+.nos-photographes{
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 47px;
+    color: $colour-primary-red;
+    text-align: right;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 0 10px 0 0;
+    @include medium{
+        font-size: 22px;
+    }
+    @include small{
+        height: 100px;
+        margin-bottom: 60px;
+        font-size: 18px;
+    }
+    @include xsmall{
+        height: 90px;
+        margin-bottom: 70px;
+        font-size: 16px;
+    }
+}
+
+#section-homepage{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    & .card{
+        width: 33%;
+        @include medium{
+            width: 50%;
+        }
+        @include small{
+            width: 100%;
+        }
+    }
+}

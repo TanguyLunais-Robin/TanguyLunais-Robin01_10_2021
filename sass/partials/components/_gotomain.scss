@@ -1,0 +1,25 @@
+.go_to_main{
+    width: 160px;
+    padding: 1px;
+    z-index: 99;
+    background: $colour-secondary-coral;
+    border-radius: 5px;
+    font-weight: bold;
+    line-height: 23px;
+    text-align: center;
+    position: fixed;
+    top : 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: all 100ms ease-in;
+    color: black;
+    & a {
+        text-decoration: none;
+    }
+}
+
+.go_to_main:focus{
+    opacity: 1;
+    transition : opacity;
+}
