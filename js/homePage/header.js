@@ -16,7 +16,7 @@ export default class Header{
         const logoImg = document.createElement('img');
         logoImg.setAttribute('src', 'images/Logo/logo.png');
         logoImg.setAttribute('alt', 'FishEye Home Page');
-        logoImg.setAttribute('tabindex' , '1');
+        logoImg.setAttribute('tabindex', '1');
 
         const goToMain = document.createElement('a');
         goToMain.setAttribute('href', '#section-homepage');
