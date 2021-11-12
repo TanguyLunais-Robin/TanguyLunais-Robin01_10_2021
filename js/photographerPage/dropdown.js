@@ -34,6 +34,7 @@ export default class Dropdown {
         dropdownToggle.setAttribute('aria-haspopup', 'listbox');
         dropdownToggle.setAttribute('aria-expanded', 'false');
         dropdownToggle.setAttribute('role', 'button');
+        dropdownToggle.setAttribute('tabindex', '8');
 
         arrow.classList.add('arrow');
         arrow.setAttribute('aria-label', 'flèche vers le bas menu fermé');
@@ -44,12 +45,15 @@ export default class Dropdown {
         optionPopularity.classList.add('option', 'option-popularity');
         optionPopularity.setAttribute('id', 'popularity');
         optionPopularity.setAttribute('aria-label', 'trier par popularité');
+        optionPopularity.setAttribute('tabindex', '8');
         optionDate.classList.add('option', 'option-date');
         optionDate.setAttribute('id', 'date');
         optionDate.setAttribute('aria-label', 'trier par date');
+        optionDate.setAttribute('tabindex', '8');
         optionTitle.classList.add('option', 'option-title');
         optionTitle.setAttribute('id', 'title');
         optionTitle.setAttribute('aria-label', 'trier par titre');
+        optionTitle.setAttribute('tabindex', '8');
         
         orderBy.appendChild(document.createTextNode('Trier par'));
         optionPopularity.appendChild(document.createTextNode('Popularité'));
