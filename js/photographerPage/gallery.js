@@ -11,7 +11,6 @@ export default class Gallery{
     createGallery() {
         const gallery = document.createElement('div');
         gallery.classList.add('gallery');
-        gallery.setAttribute('tabindex', '0');
         gallery.setAttribute('role', 'region');
         gallery.setAttribute('aria-label', 'galerie médias');
         this.selector.appendChild(gallery);

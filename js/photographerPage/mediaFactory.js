@@ -29,7 +29,7 @@ export class Video {
     const price = document.createElement('div');
     
     mediaVideo.classList.add('media-video');
-    mediaVideo.setAttribute('tabindex', '0');
+    mediaVideo.setAttribute('tabindex', '9');
     mediaVideo.setAttribute('title', `${this.titleContent}`);
     mediaVideo.setAttribute('controls', 'controls');
     mediaVideo.setAttribute('muted', 'muted');
@@ -38,7 +38,7 @@ export class Video {
     mediaCardInfoText.classList.add('media-card_info__text');
 
     mediaCardInfoHeart.classList.add('media-card_info__heart');
-    mediaCardInfoHeart.setAttribute('tabindex', '0');
+    mediaCardInfoHeart.setAttribute('tabindex', '9');
     mediaCardInfoHeart.setAttribute('aria-label', `${this.likes} likes cliquez pour ajouter un like`);
 
     heartNumber.classList.add('heart-number');
@@ -77,7 +77,7 @@ export class Video {
     mediaContent.classList.add('media-content');
     mediaContent.setAttribute('controls', 'controls');
     mediaCaption.classList.add('media-caption');
-    mediaCaption.setAttribute('tabindex', '0');
+    mediaCaption.setAttribute('tabindex', '9');
 
     mediaSrc.src = `images/Sample_Photos/${this.photographerId}/Resized_images/${this.fileName}`;
     mediaCaption.appendChild(document.createTextNode(`${this.titleContent}`));
@@ -112,14 +112,14 @@ export class Image {
     const title = document.createElement('div');
     const price = document.createElement('div');
 
-    mediaImage.setAttribute('tabindex', '0');
+    mediaImage.setAttribute('tabindex', '9');
     mediaImage.setAttribute('alt', `${this.titleContent}`);
 
     mediaCardInfo.classList.add('media-card_info');
     mediaCardInfoText.classList.add('media-card_info__text');
 
     mediaCardInfoHeart.classList.add('media-card_info__heart');
-    mediaCardInfoHeart.setAttribute('tabindex', '0');
+    mediaCardInfoHeart.setAttribute('tabindex', '9');
     mediaCardInfoHeart.setAttribute('aria-label', `${this.likes} likes cliquez pour ajouter un like`);
 
     heartNumber.classList.add('heart-number');
@@ -156,7 +156,7 @@ export class Image {
     lightboxMedia.classList.add('lightbox-media');
     mediaContent.classList.add('media-content');
     mediaCaption.classList.add('media-caption');
-    mediaCaption.setAttribute('tabindex', '0');
+    mediaCaption.setAttribute('tabindex', '9');
 
     mediaContent.setAttribute('alt', `${this.titleContent}`);
     mediaContent.src = `images/Sample_Photos/${this.photographerId}/Resized_images/${this.fileName}`;
