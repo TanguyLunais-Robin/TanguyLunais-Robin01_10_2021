@@ -22,7 +22,6 @@ export default class Hero{
   
         hero.classList.add('hero');
         hero.setAttribute('role', 'region');
-        hero.setAttribute('tabindex', '1');
         hero.setAttribute('aria-label', `info photographe ${this.photographer.name}`);
         heroInfo.classList.add('info');
         heroButton.classList.add('hero-button');

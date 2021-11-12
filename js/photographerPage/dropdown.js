@@ -27,7 +27,6 @@ export default class Dropdown {
 
         dropdown.classList.add('dropdown');
         dropdown.setAttribute('aria-labelledby', 'orderby');
-        dropdown.setAttribute('tabindex', '2');
 
         dropdownToggle.classList.add('dropdown-toggle');
         dropdownToggle.setAttribute('aria-haspopup', 'listbox');

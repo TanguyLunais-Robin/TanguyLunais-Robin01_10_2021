@@ -70,7 +70,7 @@ export default class PhotographerPage {
     
         const gallerySection = document.querySelector('.gallery');
         
-        gallerySection.setAttribute('tabindex', '3');
+        
         gallerySection.setAttribute('role', 'tab');
       });
       
