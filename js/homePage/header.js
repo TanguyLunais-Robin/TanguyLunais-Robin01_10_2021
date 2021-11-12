@@ -21,7 +21,6 @@ export default class Header{
         const goToMain = document.createElement('a');
         goToMain.setAttribute('href', '#section-homepage');
         goToMain.classList.add('go_to_main');
-        goToMain.setAttribute('tabindex', '2');
         goToMain.appendChild(document.createTextNode('Passer au contenu'));
         goToMain.addEventListener('keypress', (e) => {
             if (e.key === 'Enter') {
