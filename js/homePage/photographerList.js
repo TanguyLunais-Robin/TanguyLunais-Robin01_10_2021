@@ -93,8 +93,11 @@ export default class PhotographerList{
     portrait.src = `images/Sample_Photos/Photographers_ID_Photos/Resized_images/${photographer.portrait}`;
     cardH2.appendChild(document.createTextNode(photographer.name));
     location.appendChild(document.createTextNode(`${photographer.city}, ${photographer.country}`));
+    location.setAttribute('tabindex', '4');
     tagline.appendChild(document.createTextNode(photographer.tagline));
+    tagline.setAttribute('tabindex', '4');
     price.appendChild(document.createTextNode(`${photographer.price}€/jour`));
+    price.setAttribute('tabindex', '4' );
   
     cardFigureCaption.appendChild(cardH2);
     cardFigure.append(portrait, cardFigureCaption);
@@ -109,7 +112,6 @@ export default class PhotographerList{
     });
 
     cardInfo.append(location, tagline, price, tagbox);
-    cardInfo.setAttribute('tabindex', '4');
     
     return card;
   }
