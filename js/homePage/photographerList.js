@@ -87,6 +87,7 @@ export default class PhotographerList{
   
     cardLink.setAttribute('href', `./photographer-page.html?id=${id}`);
     cardLink.setAttribute('aria-label', `${photographer.name}`);
+    cardLink.setAttribute('tabindex', '4');
   
     portrait.setAttribute('alt', `${photographer.name}`);
     portrait.src = `images/Sample_Photos/Photographers_ID_Photos/Resized_images/${photographer.portrait}`;
