@@ -109,6 +109,7 @@ export default class PhotographerList{
     });
 
     cardInfo.append(location, tagline, price, tagbox);
+    cardInfo.setAttribute('tabindex', '5');
     
     return card;
   }
