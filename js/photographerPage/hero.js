@@ -36,6 +36,7 @@ export default class Hero{
         contactButton.classList.add('btn-contact');
         contactButton.type = 'button';
         contactButton.value = 'Contactez-moi';
+        contactButton.setAttribute('tabindex', '5');
 
         portrait.src = `images/Sample_Photos/Photographers_ID_Photos/Resized_images/${this.photographer.portrait}`;
         name.appendChild(document.createTextNode(this.photographer.name));
