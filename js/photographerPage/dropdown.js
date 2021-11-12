@@ -24,9 +24,11 @@ export default class Dropdown {
         mediaSelection.classList.add('media-selection');
         orderBy.classList.add('orderby');
         orderBy.setAttribute('id', 'orderby');
+        orderBy.setAttribute('tabindex', '7');
 
         dropdown.classList.add('dropdown');
         dropdown.setAttribute('aria-labelledby', 'orderby');
+        dropdown.setAttribute('tabindex', '8');
 
         dropdownToggle.classList.add('dropdown-toggle');
         dropdownToggle.setAttribute('aria-haspopup', 'listbox');
