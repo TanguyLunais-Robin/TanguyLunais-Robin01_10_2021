@@ -53,7 +53,7 @@ export default class Hero{
             tag.setAttribute('aria-label', `tag ${photographerTag}`);
             tag.setAttribute('role', 'button');
             tag.appendChild(document.createTextNode(`#${photographerTag}`));
-            tag.setAttribute('tabindex', '0');
+            tag.setAttribute('tabindex', '4');
             tag.dataset['tagName'] = photographerTag;
 
             tagbox.appendChild(tag);
