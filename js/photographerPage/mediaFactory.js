@@ -36,7 +36,6 @@ export class Video {
 
     mediaCardInfo.classList.add('media-card_info');
     mediaCardInfoText.classList.add('media-card_info__text');
-    mediaCardInfoText.setAttribute('tabindex', '9');
 
     mediaCardInfoHeart.classList.add('media-card_info__heart');
     mediaCardInfoHeart.setAttribute('tabindex', '9');
@@ -130,7 +129,9 @@ export class Image {
     heart.setAttribute('title', 'likes');
 
     title.classList.add('title');
+    title.setAttribute('tabindex', '9');
     price.classList.add('price');
+    price.setAttribute('tabindex', '9');
 
     title.appendChild(document.createTextNode(`${this.titleContent}`));
     price.appendChild(document.createTextNode(`${this.price}€`));
