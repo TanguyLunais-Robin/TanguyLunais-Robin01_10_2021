@@ -38,9 +38,7 @@ export default class HomePage {
         const headerContent = new Header(header, photographerList);
         headerContent.createHeader();
         mainTitle.appendChild(document.createTextNode('Nos photographes'));
-        mainTitle.setAttribute('tabindex', '2');
         photographerList.displayRelevantCards();
-        sectionHomepage.setAttribute('tabindex', '5');
         sectionHomepage.setAttribute('aria-label', 'cartes des photographes');
       });
       

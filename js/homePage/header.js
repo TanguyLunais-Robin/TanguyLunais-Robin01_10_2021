@@ -38,7 +38,7 @@ export default class Header{
     createNavbar() {
         const navbar = document.createElement('nav');
         navbar.setAttribute('role', 'nav');
-        navbar.setAttribute('tabindex', '3');
+        navbar.setAttribute('tabindex', '2');
         navbar.setAttribute('aria-label', 'navigation principale');
         const tagsName = ['portrait', 'art', 'fashion', 'architecture', 'travel', 'sport', 'animals', 'events'];
 
