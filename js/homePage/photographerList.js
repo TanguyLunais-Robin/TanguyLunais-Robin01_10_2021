@@ -109,7 +109,7 @@ export default class PhotographerList{
     });
 
     cardInfo.append(location, tagline, price, tagbox);
-    cardInfo.setAttribute('tabindex', '5');
+    cardInfo.setAttribute('tabindex', '4');
     
     return card;
   }
@@ -119,7 +119,7 @@ export default class PhotographerList{
     tag.classList.add('tag');
     tag.setAttribute('aria-label', `tag ${tagName}`);
     tag.setAttribute('role', 'button');
-    tag.setAttribute('tabindex', '0');
+    tag.setAttribute('tabindex', '4');
     tag.appendChild(document.createTextNode(`#${tagName}`));
     tag.dataset['tagName'] = tagName;
 
