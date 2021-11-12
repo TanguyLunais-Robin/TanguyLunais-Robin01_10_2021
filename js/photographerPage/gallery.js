@@ -110,7 +110,6 @@ export default class Gallery{
 
         bottomBox.classList.add('bottom-box');
         bottomBox.setAttribute('aria-label', 'popularité et prix');
-        bottomBox.setAttribute('tabindex', '4');
         ratingSection.classList.add('rating-section');
         rating.classList.add('rating');
         pricePerDay.classList.add('price-per-day');
