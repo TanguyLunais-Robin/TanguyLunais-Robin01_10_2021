@@ -39,8 +39,12 @@ export default class Hero{
 
         portrait.src = `images/Sample_Photos/Photographers_ID_Photos/Resized_images/${this.photographer.portrait}`;
         name.appendChild(document.createTextNode(this.photographer.name));
+        name.setAttribute('tabindex', '1');
         location.appendChild(document.createTextNode(`${this.photographer.city}, ${this.photographer.country}`));
+        location.setAttribute('tabindex', '2');
         tagline.appendChild(document.createTextNode(this.photographer.tagline));
+        tagline.setAttribute('tabindex', '3');
+
 
         const photographerTags = this.photographer.tags;
         photographerTags.forEach((photographerTag) => {
