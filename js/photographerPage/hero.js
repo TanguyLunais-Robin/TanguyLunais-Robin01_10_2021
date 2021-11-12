@@ -28,6 +28,7 @@ export default class Hero{
         heroImage.classList.add('hero-image');
         portrait.classList.add('portrait');
         portrait.setAttribute('alt', `portrait ${this.photographer.name}`);
+        portrait.setAttribute('tabindex', '6');
         name.classList.add('name');
         location.classList.add('location');
         tagline.classList.add('tagline');
