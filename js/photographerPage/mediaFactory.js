@@ -46,7 +46,9 @@ export class Video {
     heart.setAttribute('title', 'likes');
 
     title.classList.add('title');
+    title.setAttribute('tabindex', '9');
     price.classList.add('price');
+    price.setAttribute('tabindex', '9');
 
     title.appendChild(document.createTextNode(`${this.titleContent}`));
     price.appendChild(document.createTextNode(`${this.price}€`));
