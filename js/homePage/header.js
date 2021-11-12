@@ -45,7 +45,7 @@ export default class Header{
         tagsName.forEach(tagName => {
             const tag = this.photographerList.createTag(navbar, tagName);
             tag.classList.add('navigation-item');
-            tag.setAttribute('tabindex', '0');
+            tag.setAttribute('tabindex', '3');
             return tag;
         });
         return navbar;
