@@ -57,7 +57,7 @@ export default class PhotographerList{
     }
 
   }
-
+  // creation carte du photographe 
   createCard(photographer) {
     const { id } = photographer;
     const card = document.createElement('div');

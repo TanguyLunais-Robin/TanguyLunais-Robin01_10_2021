@@ -3,7 +3,7 @@ export default class Header{
         this.selector = selector;
         this.photographerList = photographerList;
     }
-
+    // creation du header avec les differents elements 
     createHeader(){        
         const headerElements = document.createElement('div');
         headerElements.classList.add('header-elements');
@@ -34,7 +34,7 @@ export default class Header{
         headerElements.append(logoLink, goToMain, navbar);
         this.selector.appendChild(headerElements);
     }
-
+    // creation navbar 
     createNavbar() {
         const navbar = document.createElement('nav');
         navbar.setAttribute('role', 'nav');
